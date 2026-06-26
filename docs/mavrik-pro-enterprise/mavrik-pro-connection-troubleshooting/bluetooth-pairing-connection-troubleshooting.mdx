@@ -1,0 +1,60 @@
+---
+title: "Bluetooth Pairing & Connection Troubleshooting"
+description: "Pair Mavrik-Pro over Bluetooth, clear previous Bluetooth connections, and verify StrikerLink connection."
+---
+
+# Bluetooth Pairing & Connection Troubleshooting
+
+## BLE Pairing and StrikerLink Connection
+
+### Power On the Mavrik-Pro
+
+1. Press the **PWR** button located on the bottom of the blaster.
+
+### Pairing Advertisement
+
+1. When the Mavrik-Pro powers on, it will play the start-up chime and automatically go into Demo Mode.
+2. While demo modes are being operated, the relevant haptic and LED events will play on trigger pulls and sensor touches.
+3. If the Mavrik-Pro is idle, the BLE advertising lights will pulse in cyan.
+
+### Bluetooth Pairing
+
+1. Navigate to the Bluetooth settings window on the machine you wish to pair the Mavrik-Pro.
+2. If you are using Windows 11, navigate to the **Device settings** section under **Bluetooth & devices** in **Settings**.
+3. Under **Bluetooth devices discovery**, change the type from **Default** to **Advanced**.
+4. Click **Add device**, locate the Mavrik-Pro in the available BLE devices list, and select it for pairing.
+5. When the Mavrik-Pro is paired, it will play a solid cyan light on all LED strips.
+
+*For best performance, please use Windows 11 with a Bluetooth antenna that supports BLE 5.1 or above. Windows 10 and BLE 5.0 are compatible with limited support, and use of StrikerLink Bridge Mode is strongly encouraged.*
+
+### Troubleshooting: Blaster Not Appearing in Windows?
+
+Your computer may only be recognizing low power Bluetooth devices.
+
+1. Select **Start > Settings > Bluetooth & devices > Devices**.
+2. Under **Device settings > Bluetooth devices discovery**, **Advanced** must be selected to display all types of Bluetooth devices.
+
+### Bluetooth Unpairing
+
+If you have previously connected your blaster to a PC, you may need to clear your Bluetooth connection. Here's how:
+
+1. Power on Mavrik. Hold the **R** and **L** side buttons for 4 seconds.
+2. LEDs should flash then turn off.
+3. Cycle power on your Mavrik-Pro. The LEDs are not illuminated, but the device is still on.
+
+### StrikerLink Connection
+
+1. If you are using the desktop version of StrikerLink, you can now run the application.
+2. If you are on an Android-based XR headset and have StrikerLink installed, the Mavrik-Pro will automatically connect to StrikerLink.
+   - If it does not, navigate to your app library and run the app.
+3. When a connection is made to StrikerLink, the Mavrik-Pro LEDs will cascade forward in purple, followed by solid purple after the cascade.
+4. Your blaster is now ready to interface with your game or game engine.
+5. In your web browser, navigate to [http://localhost:5046](http://localhost:5046).
+6. On Android devices, enter your device's IP address followed by port `5046` into your browser.
+   - Example: `192.168.1.10:5046`
+   - Here you should find the web service UI, [Mavrik Manager](/docs/mavrik-pro-enterprise/mavrik-pro-developer-tools-sdks/mavrik-manager).
+7. When your device is connected, it will show up in your device list.
+
+![Mavrik Manager connected device list.](./img/mavrik-manager-startup.png)
+
+For more information on how to use Mavrik Manager, [click here](/docs/mavrik-pro-enterprise/mavrik-pro-developer-tools-sdks/mavrik-manager).

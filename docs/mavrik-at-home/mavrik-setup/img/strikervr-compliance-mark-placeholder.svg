@@ -1,0 +1,8 @@
+<svg width="177" height="177" viewBox="0 0 177 177" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">StrikerVR compliance mark placeholder</title>
+  <desc id="desc">Placeholder for the StrikerVR compliance mark or logo.</desc>
+  <rect width="177" height="177" rx="8" fill="#f5f6f8"/>
+  <rect x="1" y="1" width="175" height="175" rx="7" fill="none" stroke="#cbd2dc" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="88.5" y="82" text-anchor="middle" fill="#15171c" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Placeholder</text>
+  <text x="88.5" y="107" text-anchor="middle" fill="#4d5663" font-family="Arial, Helvetica, sans-serif" font-size="12">Compliance mark</text>
+</svg>

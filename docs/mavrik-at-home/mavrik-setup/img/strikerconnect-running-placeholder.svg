@@ -1,0 +1,8 @@
+<svg width="743" height="418" viewBox="0 0 743 418" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">StrikerConnect running placeholder</title>
+  <desc id="desc">Placeholder for the StrikerConnect running confirmation screen.</desc>
+  <rect width="743" height="418" rx="8" fill="#f5f6f8"/>
+  <rect x="1" y="1" width="741" height="416" rx="7" fill="none" stroke="#cbd2dc" stroke-width="2" stroke-dasharray="10 8"/>
+  <text x="371.5" y="195" text-anchor="middle" fill="#15171c" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Image Placeholder</text>
+  <text x="371.5" y="229" text-anchor="middle" fill="#4d5663" font-family="Arial, Helvetica, sans-serif" font-size="16">StrikerConnect running confirmation</text>
+</svg>

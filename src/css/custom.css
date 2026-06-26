@@ -1,0 +1,104 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+:root {
+  --ifm-color-primary: #0077b6;
+  --ifm-color-primary-dark: #006aa3;
+  --ifm-color-primary-darker: #006399;
+  --ifm-color-primary-darkest: #00527e;
+  --ifm-color-primary-light: #0084ca;
+  --ifm-color-primary-lighter: #008bd5;
+  --ifm-color-primary-lightest: #00a5e8;
+  --ifm-code-font-size: 95%;
+  --striker-border: #d7dbe3;
+  --striker-page-background: #f5f6f8;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #38c6f4;
+  --ifm-color-primary-dark: #1ebdf2;
+  --ifm-color-primary-darker: #12b8f0;
+  --ifm-color-primary-darkest: #0b9ed0;
+  --ifm-color-primary-light: #5bd0f6;
+  --ifm-color-primary-lighter: #72d7f7;
+  --ifm-color-primary-lightest: #a7e8fb;
+  --striker-border: #333845;
+  --striker-page-background: #111318;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.navbar__title {
+  font-weight: 700;
+}
+
+.button {
+  border-radius: 6px;
+}
+
+.theme-doc-markdown img {
+  display: block;
+  height: auto;
+  margin: 1.5rem auto;
+  max-width: 100%;
+}
+
+.imagePlaceholder {
+  align-items: center;
+  background: var(--striker-page-background);
+  border: 2px dashed var(--striker-border);
+  border-radius: 8px;
+  color: var(--ifm-color-emphasis-700);
+  display: flex;
+  flex-direction: column;
+  font-size: 0.95rem;
+  gap: 0.35rem;
+  justify-content: center;
+  margin: 1.5rem auto;
+  max-width: 100%;
+  min-height: 16rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.imagePlaceholder strong {
+  color: var(--ifm-color-content);
+  font-size: 1.1rem;
+}
+
+.imagePlaceholder--small {
+  max-width: 20rem;
+  min-height: 24rem;
+}
+
+.imagePlaceholder--icon {
+  display: inline-flex;
+  min-height: 3rem;
+  min-width: 3rem;
+  padding: 0.5rem;
+}
+
+.videoEmbed {
+  aspect-ratio: 16 / 9;
+  margin: 1.5rem 0;
+  max-width: 100%;
+}
+
+.videoEmbed iframe {
+  border: 0;
+  border-radius: 8px;
+  height: 100%;
+  width: 100%;
+}
+
+.socialLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  list-style: none;
+  margin: 1rem 0 2rem;
+  padding: 0;
+}

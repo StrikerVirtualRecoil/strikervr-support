@@ -1,0 +1,73 @@
+---
+title: "StrikerLink Runtime"
+description: "Download StrikerLink, review wireless requirements, install the Android runtime, and check haptic compatibility."
+---
+
+# StrikerLink Runtime
+
+StrikerLink is the library that serves as the connection between the Mavrik-Pro, game engine, PC, and/or Android headset.
+
+## Download StrikerLink
+
+Download the StrikerLink installer here:
+
+- [0.11.3](https://strikervr.com/pages/developers-support) - Latest stable build. Supports Pico 4 Ultra Enterprise.
+- [0.10.0](https://strikervr.com/pages/developers-support) - StrikerLink webservice and Firmware 1.2 updates.
+- [0.9.0](https://strikervr.com/pages/developers-support) - Android Installer introduced.
+
+
+## Wireless Communication
+
+- For best performance developing with a direct-to-PC connection, use Windows 11 with a Bluetooth antenna that supports BLE 5.1 or above.
+- Windows 10 and BLE 5.0 are supported with limited performance.
+- Use of StrikerLink **Bridge Mode** is strongly encouraged in commercial situations for blasters traveling further than 3m from the server. Bridge Mode takes advantage of the Wi-Fi on your VR headset to transfer data to a server PC.
+
+## Android
+
+**Using StrikerLink Android Installer**
+
+1. Plug the USB-C cable connected to your headset into your PC or laptop.
+2. Ensure USB debugging is enabled on your headset.
+3. You can verify this using `adb devices` on the command line or with the SideQuest app.
+4. Navigate to `C:/ProgramFiles/StrikerVR/StrikerLink/Tools/StrikerLink-Android-Installer/`.
+5. Double-click `StrikerLink-Android-Installer.exe` to run the installer.
+6. Follow the instructions provided by the installer.
+7. Once the installation is complete, a notification should appear in your headset indicating that StrikerLink has successfully started.
+8. If the installer does not recognize your device, double-check that USB debugging is enabled.
+9. Ensure you have the latest USB drivers installed on your PC.
+10. Make sure to allow any permissions requested by your headset during the process.
+
+**Manual ADB Installation**
+
+1. Find the APK and helpful install files in the **Tools** folder within the StrikerLink install directory.
+2. If installing the APK manually with Android Debug Bridge, use the `-g` flag to grant all necessary permissions:
+
+```shell
+adb install -g com.StrikerVR.StrikerLink-latest.apk
+```
+
+3. If your Mavrik-Pro does not connect automatically, reboot your headset or run:
+
+```shell
+adb shell am start-foreground-service -n com.StrikerVR.StrikerLink/com.StrikerVR.StrikerLink.BackgroundService
+```
+
+4. StrikerLink can also be installed with SideQuest using the **Run ADB Commands** dropdown and this install command:
+
+```shell
+adb install -g "<file-path>/com.StrikerVR.StrikerLink-latest.apk"
+```
+
+## Haptic Version Compatibility
+
+**Original haptic format**
+
+[StrikerLink 0.6.0](https://strikervr.com/pages/developers-support): Firmware 1.0
+
+**Enhanced haptic support**
+
+- StrikerLink version 0.7.1+: Firmware 1.1+
+- Unity SDK 0.8.2+
+- Unreal Engine SDK 5.1+
+
+For additional assistance, please join the [StrikerVR Discord](https://discord.com/invite/mbMm3FWAgm) or email [Support@StrikerVR.com](mailto:Support@StrikerVR.com).

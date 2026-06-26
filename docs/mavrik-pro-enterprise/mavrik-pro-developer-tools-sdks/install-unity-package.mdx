@@ -1,0 +1,100 @@
+---
+title: "Install Unity Package"
+description: "Install the StrikerVR StrikerLink SDK package in Unity and import the sample Mavrik scene."
+---
+
+# Install Unity Package
+
+URP samples are compatible with Unity 2020 LTS or above using Universal Render Pipeline.
+
+## Step 1
+
+Navigate to your project directory in file explorer:
+
+```text
+<UnityProject>/Packages/manifest.json
+```
+
+## Step 2
+
+Add a new scoped registry to `manifest.json` with the following:
+
+**Name:** *OpenUPM*
+
+**URL:** *https://package.openupm.com*
+
+**Scopes:**
+
+- `com.malee.reorderablelist`
+- `jillejr.newtonsoft.json-for-unity`
+- `com.strikervr.strikersdk`
+
+[More information about scoped registries in Unity](https://docs.unity3d.com/2021.3/Documentation/Manual/upm-scoped.html)
+
+```json title="manifest.json"
+{
+  "scopedRegistries": [
+    {
+      "name": "OpenUPM",
+      "url": "https://package.openupm.com",
+      "scopes": [
+        "com.malee.reorderablelist",
+        "jillejr.newtonsoft.json-for-unity",
+        "com.strikervr.strikersdk"
+      ]
+    }
+  ]
+}
+```
+
+## Step 3
+
+1. Navigate to **Edit > Project Settings > Package Manager**.
+2. Under **Package Manager > My Registries**, install **StrikerVR StrikerLink SDK**.
+   - You may need to close and re-open Package Manager to refresh.
+3. Import **Samples (URP)** from the StrikerVR StrikerLink SDK **Samples** drop-down menu in Package Manager.
+
+## Sample Mavrik Scene
+
+- Check out the `SampleMavrikScene` in the imported samples for a basic example of using the SDK.
+  - `Assets/Samples/StrikerVR StrikerLink SDK/0.8.2/Samples (URP)/Scenes/SampleMavrikScene`
+- You can shoot with the trigger, and reload by hitting the bottom of the blaster. It will flash red when you need to reload.
+
+## Unity 2019.1 - 2019.3 Support
+
+StrikerVR StrikerLink SDK v0.8.2 supports back to Unity 2019.1 and is available over UPM. To install it in Unity version 2019.1 - 2019.3:
+
+**1. Add this to your `manifest.json`:**
+
+```json title="manifest.json"
+{
+  "scopedRegistries": [
+    {
+      "name": "OpenUPM",
+      "url": "https://package.openupm.com/",
+      "scopes": [
+        "com.malee.reorderablelist",
+        "com.strikervr.strikersdk"
+      ]
+    }
+  ],
+  "dependencies": {
+    "com.malee.reorderablelist": "1.0.1",
+    "com.strikervr.strikersdk": "0.8.2"
+  }
+}
+```
+
+**2. Navigate to:** [https://github.com/applejag/Newtonsoft.Json-for-Unity](https://github.com/applejag/Newtonsoft.Json-for-Unity)
+
+Download the `.zip` file and extract it.
+
+**3. In Package Manager, select:** **Add package from disc...**
+
+**4. Select this file:**
+
+```text
+Newtonsoft.Json-for-Unity/tree/master/Src/Newtonsoft.Json-for-Unity/package.json
+```
+
+For additional assistance, please join the [StrikerVR Discord](https://discord.com/invite/mbMm3FWAgm) or email [Support@StrikerVR.com](mailto:Support@StrikerVR.com).

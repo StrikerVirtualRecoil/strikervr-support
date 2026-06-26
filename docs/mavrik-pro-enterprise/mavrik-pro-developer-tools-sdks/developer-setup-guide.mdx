@@ -1,0 +1,85 @@
+---
+title: "Developer Setup Guide"
+description: "Install StrikerLink, connect Mavrik-Pro, configure Bridge Mode, and prepare developer settings."
+---
+
+# Developer Setup Guide
+
+## 1. Install StrikerLink
+
+**StrikerLink** is the application that allows headsets to connect to the Mavrik-Pro blaster. Without installing StrikerLink, the blaster will not work with any headset.
+
+**PC Installation**
+
+1. Download the latest version of [StrikerLink](https://strikervr.com/pages/developers-support?hcUrl=%252Fen-US%252Fstrikerlink-runtime-1086926).
+2. Start the `StrikerLink-Setup-<version>.exe` file.
+3. When prompted by Windows SmartScreen, select **More info**, then select **Run anyway**.
+4. When installation completes, StrikerLink will automatically start. Find the installation directory at `C:/ProgramFiles/StrikerVR/StrikerLink`.
+
+**Headset Installation**
+
+1. Plug the USB-C cable connected to your headset into your PC or laptop.
+2. Ensure USB debugging is enabled on your headset. When started, the **StrikerLink Android Installer** will alert you if debugging has not been enabled correctly.
+3. Navigate to `C:/ProgramFiles/StrikerVR/StrikerLink/Tools/android/StrikerLink-Android-Installer/`.
+4. Double-click `StrikerLink-Android-Installer.exe` to run the Android installer.
+5. Follow the instructions provided by the installer.
+6. Once the installation is complete, a notification should appear in your headset indicating that **StrikerLink has successfully started**.
+
+**Debugging**
+
+1. If the installer does not recognize your device, double-check that USB debugging is enabled.
+2. Ensure you have the latest USB drivers installed on your PC.
+3. Make sure to allow any permissions requested by your headset during the process.
+
+## 2. Connect the Mavrik-Pro
+
+After **StrikerLink** is installed, you can now connect the Mavrik-Pro to your PC or headset via Bluetooth.
+
+**PC (Windows 11)**
+
+1. Turn your Mavrik on.
+2. Hold the **L** and **R** side buttons until the LEDs shut off. Skip this step if the pairing memory has already been cleared.
+3. Cycle power and turn the Mavrik back on.
+4. Navigate to your **Bluetooth** manager in **Windows Settings**.
+5. Connect the blaster, similar to connecting any other Bluetooth device to your PC.
+6. Once connected, open `StrikerLink.exe` and open **Mavrik Manager**.
+7. Once in the manager, ensure the Mavrik-Pro is connected by pulling the trigger. The colored dot next to your device name should blink when the trigger is pulled.
+
+**Android (Meta Quest 3 and HTC Vive Focus 3/Vision)**
+
+1. Turn your Mavrik on.
+2. Hold the **L** and **R** side buttons until the LEDs shut off. Skip this step if the pairing memory has already been cleared.
+3. Cycle power and turn the Mavrik back on.
+4. Navigate to the **Bluetooth** manager in **Settings**.
+5. Find the Mavrik-Pro unit in the list of available devices for Bluetooth pairing, and select it. All LEDs on the Mavrik should be pale blue and constant.
+6. StrikerLink should initiate a connection to the Mavrik-Pro. Cascading lights and a connection haptic will indicate a successful Bluetooth and StrikerLink connection.
+7. The colored dot next to your device name in the Mavrik Manager device list should blink when the trigger is pulled.
+
+**Android (Pico 4 Ultra Enterprise)**
+
+1. Turn your Mavrik on.
+2. Hold the **L** and **R** side buttons until the LEDs shut off. Skip this step if the pairing memory has already been cleared.
+3. Cycle power and turn the Mavrik back on.
+4. Navigate to **Mavrik Manager**.
+5. Make sure the Mavrik is the only one nearby that is in pairing/demo mode.
+6. Select **Pair Device** under the device list.
+7. StrikerLink should initiate a connection to the Mavrik-Pro seconds after the Bluetooth connection. Cascading lights and a connection haptic will indicate a successful StrikerLink connection.
+8. The colored dot next to your device name in the Mavrik Manager device list should blink when the trigger is pulled.
+
+*If you have paired your Mavrik-Pro unit to the Pico headset via the Bluetooth UI in the OS settings menu, it may take a few tries to unpair and disconnect from Bluetooth. Please only Bluetooth pair your Mavrik-Pro to Pico 4 Ultra Enterprise headsets using Mavrik Manager. We are working closely with Pico to streamline this process.*
+
+**Basic Usage**
+
+1. If you are using the **desktop version of StrikerLink**, you can now run the application.
+2. If you are on an **Android-based XR headset** and have **StrikerLink installed**, the Mavrik-Pro will automatically connect to StrikerLink.
+   - If the Mavrik-Pro does not automatically connect, simply navigate to your app library and run the app.
+3. When a connection is made to StrikerLink, the **Mavrik-Pro LEDs will cascade forward in purple**, followed by **solid purple** after the cascade. Your blaster is now ready to interface with your game or game engine.
+
+## 3. Open [Mavrik Manager](/docs/mavrik-pro-enterprise/mavrik-pro-developer-tools-sdks/mavrik-manager)
+
+**[Mavrik Manager](/docs/mavrik-pro-enterprise/mavrik-pro-developer-tools-sdks/mavrik-manager)** is the web-based UI that allows operators to remotely manage offsets, enable Bridge Mode, and manage Mavrik-Pro blasters.
+
+
+
+
+
