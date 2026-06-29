@@ -58,20 +58,20 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'StrikerVR Support',
+        title: 'StrikerVR Support Documents',
         logo: {
-          alt: 'StrikerVR Support',
+          alt: 'StrikerVR Support Documents',
           src: 'img/StrikerVR-Logo_icon-white_1.png',
         },
         items: [
           {
-            to: '/docs/mavrik-at-home',
-            label: 'Mavrik at Home',
+            to: '/docs/mavrik-pro-enterprise',
+            label: 'Mavrik Pro Enterprise',
             position: 'left',
           },
           {
-            to: '/docs/mavrik-pro-enterprise',
-            label: 'Mavrik Pro Enterprise',
+            to: '/docs/mavrik-at-home',
+            label: 'Mavrik at Home',
             position: 'left',
           },
           {
@@ -88,12 +88,12 @@ const config = {
             title: 'Products',
             items: [
               {
-                label: 'Mavrik at Home',
-                to: '/docs/mavrik-at-home',
-              },
-              {
                 label: 'Mavrik Pro Enterprise',
                 to: '/docs/mavrik-pro-enterprise',
+              },
+              {
+                label: 'Mavrik at Home',
+                to: '/docs/mavrik-at-home',
               },
             ],
           },
@@ -131,8 +131,17 @@ const config = {
               },
             ],
           },
+          {
+            title: 'Support',
+            items: [
+              {
+                label: 'support@strikervr.com',
+                href: 'mailto:support@strikervr.com',
+              },
+            ],
+          },
         ],
-        copyright: `Copyright (c) ${new Date().getFullYear()} StrikerVR. Built with Docusaurus.`,
+        copyright: `Copyright (c) ${new Date().getFullYear()} StrikerVR.`,
       },
       prism: {
         theme: prismThemes.github,

@@ -35,6 +35,10 @@
   font-weight: 700;
 }
 
+.navbar__brand--static {
+  cursor: default;
+}
+
 .button {
   border-radius: 6px;
 }
